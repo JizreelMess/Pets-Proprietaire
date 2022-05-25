@@ -23,7 +23,6 @@ const navigation =useNavigation();
  return(
   <SafeAreaView style={styles.container}>
   <ScrollView style={styles.scrollView}>
-
   <View style={styles.tituloImg}>
       <Text style={styles.titulo}>Menu</Text>
       <Pressable onPress={() => navigation.navigate('Meuperfil')}>

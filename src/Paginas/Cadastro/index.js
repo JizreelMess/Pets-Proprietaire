@@ -24,30 +24,33 @@ export default function Cadastro(){
   const[password, setPassword ]= useState('');
 
   async function cadastrar(){
-    if(nome !== '' & sobrenome !== '' & password !== '' & email !== ''){
-      let usuarios = await firebase.database().ref('usuarios');
-      let chave = usuarios.push().key;
-      
-      usuarios.child(chave).set({
-        nome: nome,
-        sobrenome: sobrenome,
-        dataDeNascimento:dataDeNascimento,
-        telefone:telefone,
-        email: email,
-        password: password, 
-        
-      });
+
+
       await firebase.auth().createUserWithEmailAndPassword(email,password)
-      .then((value)=>{ alert('usuario cadastrado' +value.user.email);})
+      .then((value)=>{ 
+        firebase.database().ref('usuarios').child(value.user.uid).set({
+         nome: nome,
+         sobrenomne: sobrenome,
+         dataDeNascimento: dataDeNascimento,
+         telefone:telefone,
+         
+        })
+        alert('Usuario Cadastrado');
+        setSobrenome('');
+        setNome('');
+        setDataDeNascimento('');
+        setTelefone('');
+        setEmail('');
+        setPassword('');
+        })
+      .catch((error)=>{
+       alert('Error');
+
+      })
  
       
-    }
-    setSobrenome('');
-    setNome('');
-    setDataDeNascimento('');
-    setTelefone('');
-    setEmail('');
-    setPassword('');
+    
+   
     
   }
 

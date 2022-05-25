@@ -70,8 +70,8 @@ const navigation =useNavigation();
         <Image style={styles.tinyLogo} source = {require('../Imagens/3-Configuração.png')}/>
         <Text style={styles.paragraph3}>Configurações</Text>
       </View>
-
-
+      <View></View>
+      <View><Text style={styles.texto}>Pets Proprietaire  © 2022 - v1.0.0</Text></View>
   </ScrollView>
   </SafeAreaView>
  )
@@ -159,6 +159,12 @@ titulo: {
     flexDirection:"row",
     alignItems:"center",
     marginTop: 20,
+  },
+  texto:{
+    fontSize: 12,
+    marginLeft: 25,
+    alignItems: 'center',
+    marginTop: 45,
   },
 scrollView: {
   marginHorizontal: 20,
