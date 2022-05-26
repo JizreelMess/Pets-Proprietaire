@@ -37,6 +37,11 @@ export default function Home(){
       
     />
     </View>
+
+    <Text style={styles.paragraph}>
+        Pular
+      </Text>
+
   </View>
 
  )
@@ -60,6 +65,14 @@ button:{
     backgroundColor: '#0000ff',
     width:150,
     alignSelf:'center',
+  },
+  paragraph: {
+    margin: 24,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textDecorationLine: 'underline',
+    textAlign: 'center',
+    color: '#3E6DFF',
   },
   tinyLogo: {
     width:280,

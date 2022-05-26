@@ -44,7 +44,22 @@ export default function Cadastro(){
         setPassword('');
         })
       .catch((error)=>{
-       alert('Error');
+        if(error.code == 'auth/weak-password'){
+          alert('A senha dever ter no minimo 6 caracteres!');
+          return;
+        }
+        
+        if(error.code == 'auth/invalid-email'){
+          alert('Digite um tipo valido de email ... EX:user@gmail.com ');
+          return;
+        }
+
+        if(error.code == 'auth/email-already-exists'){
+          alert('Email já cadastrado!!');
+          return;
+        }
+
+    
 
       })
  
