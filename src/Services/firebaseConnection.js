@@ -4,13 +4,13 @@ import 'firebase/auth';
 
 
 let firebaseConfig = {
-    apiKey: "AIzaSyBIVc3oiUOj34_l7FZYemFjA3WWdyLpiPI",
-    authDomain: "petspro-fce17.firebaseapp.com",
-    projectId: "petspro-fce17",
-    storageBucket: "petspro-fce17.appspot.com",
-    messagingSenderId: "1036445663259",
-    appId: "1:1036445663259:web:2fa155837c257cc88038be",
-    measurementId: "G-8MLTXNS2X5"
+  apiKey: "AIzaSyANkBpPqRiiJr2eMN8jpyUtCH79wq5GbF8",
+  authDomain: "pets-proprietaire.firebaseapp.com",
+  projectId: "pets-proprietaire",
+  storageBucket: "pets-proprietaire.appspot.com",
+  messagingSenderId: "238693836360",
+  appId: "1:238693836360:web:f18ffa6bca3193ceca9a7d",
+  measurementId: "G-6LBTHKG36X"
   };
 
   if(!firebase.apps.length){
