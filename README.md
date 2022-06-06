@@ -7,7 +7,13 @@
                                                               Davi yuri
                                                               Guilherme gonçalves
                                                               Jizreel messias
-                                                              joão victor
+                                                              João victor
+
+                                                              Colaboradores:
+                                                              https://github.com/joaovictor-jv
+                                                              https://github.com/guigoncalvesss
+                                                              https://github.com/Benni1401
+                                                              https://github.com/JizreelMess
                                                               
                                                               Sobre:
                       Nosso projeto foi desenvolvido para solucionar dificuldades que donos de pets costumam ter,
