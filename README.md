@@ -14,6 +14,7 @@
                                                               https://github.com/guigoncalvesss
                                                               https://github.com/Benni1401
                                                               https://github.com/JizreelMess
+                                                              https://github.com/LcdgtlScotch
                                                               
                                                               Sobre:
                       Nosso projeto foi desenvolvido para solucionar dificuldades que donos de pets costumam ter,
